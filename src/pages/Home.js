@@ -17,6 +17,9 @@ const Home = () =>{
                     <Menu.Item key="home">
                         <Link to="/"> Home</Link>
                     </Menu.Item>
+                    <Menu.Item key="/create" style={{"float":"right"}}>
+                        <Link to="">Create Project</Link>
+                    </Menu.Item>
                 </Menu>
             </Header>
 
