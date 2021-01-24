@@ -1,18 +1,28 @@
 import React from 'react'
 
-const ProjectCreateForm = () => {
+const ProjectCreateForm = ({
+    handleSubmit,
+    handleChange,
+    values
+    }) => {
+
+    const {
+        name,
+        description,
+        author} = values
 
     return(
         
-        <form>
+        <form onSubmit={handleSubmit}>
       <div className="form-group col-md-3 p-3">
         <label>Name</label>
         <input
           type="text"
-          name="title"
+          name="name"
           className="form-control"
-          width="2rem"
-          
+          value={name}
+          onChange={handleChange}
+         
         />
       </div>
 
@@ -22,7 +32,9 @@ const ProjectCreateForm = () => {
           type="text"
           name="description"
           className="form-control"
-          
+          value={description}
+          onChange={handleChange}
+         
         />
       </div>
 
@@ -30,8 +42,11 @@ const ProjectCreateForm = () => {
         <label>Author</label>
         <input
           type="text"
-          name="description"
+          name="author"
           className="form-control"
+          value={author}
+          onChange={handleChange}
+          
           
         />
       </div>
