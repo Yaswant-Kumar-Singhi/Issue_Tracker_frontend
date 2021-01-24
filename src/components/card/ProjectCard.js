@@ -23,7 +23,7 @@ const ProjectCard = ({project}) =>{
         }
         actions={[
           <Link to={``}>
-            <EyeOutlined className="text-warning" /> <br /> View Project Issue
+            <EyeOutlined className="text-warning" /> <br /> View 
           </Link>
         ]}
       >
