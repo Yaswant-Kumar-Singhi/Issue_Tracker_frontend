@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card } from "antd";
 import {Link} from 'react-router-dom'
-import { EyeOutlined } from "@ant-design/icons";
+import { EyeOutlined , EditOutlined} from "@ant-design/icons";
 import laptop from '../../images/laptop.png'
 
 const { Meta } = Card;
 
 const ProjectCard = ({project}) =>{
-    const { image, name, description, author } = project;
+    const { image, name, description, author , slug} = project;
 
 
     return(
@@ -22,15 +22,17 @@ const ProjectCard = ({project}) =>{
           />
         }
         actions={[
-          <Link to={``}>
+          <Link to={`/project/${slug}`}>
             <EyeOutlined className="text-warning" /> <br /> View 
-          </Link>
+          </Link>,
+          <>
+          <EditOutlined className="text-danger" /> <br /> Add Issue
+        </>,
         ]}
       >
         <Meta
-          title={name}
+          title={`${name} - ${author}`}
           description={`${description}`}
-          author = {author}
         />
       </Card>
     </>
