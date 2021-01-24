@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderComponent from '../../components/card/HeaderComponent'
+import ProjectCreateForm from '../../components/forms/ProjectCreateForm'
 
 
 const ProjectCreate = () =>{
@@ -7,10 +8,14 @@ const ProjectCreate = () =>{
     return (
         <div>
             <HeaderComponent/>
-            I am in create project page
+            <br />
+            <ProjectCreateForm />
         </div>
     )
 
 }
 
 export default ProjectCreate;
+
+
+
