@@ -7,7 +7,7 @@ import laptop from '../../images/laptop.png'
 const { Meta } = Card;
 
 const ProjectCard = ({project}) =>{
-    const { image, name, description, author , slug} = project;
+    const { image, name, description, author , slug, _id} = project;
 
 
     return(
@@ -26,7 +26,7 @@ const ProjectCard = ({project}) =>{
             <EyeOutlined className="text-warning" /> <br /> View 
           </Link>,
           <>
-          <Link to={`/project/issue/${slug}`}>
+          <Link to={`/project/:${_id}/issue`}>
           <EditOutlined className="text-danger" /> <br /> Add Issue
           </Link>
         </>,
