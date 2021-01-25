@@ -12,6 +12,6 @@ export const create = async (project) =>
    export const getProject = async (slug) =>
    await axios.get(`http://localhost:8000/api/project/${slug}`);
 
-   export const createIssue = async (slug,issue) =>
-   await axios.post(`http://localhost:8000/api/project/issue/${slug}`,issue,{
+   export const createIssue = async (issue) =>
+   await axios.post(`http://localhost:8000/api/project/:_id/issue`,issue,{
    });

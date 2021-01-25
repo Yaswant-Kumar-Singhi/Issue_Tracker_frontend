@@ -3,9 +3,10 @@ import React from 'react'
 const IssueCreateForm = () => {
 
     
+
     return(
         
-        <form >
+        <form>
       <div className="form-group col-md-3 p-3">
         <label>Name</label>
         <input
@@ -13,7 +14,6 @@ const IssueCreateForm = () => {
           name="title"
           className="form-control"
           
-         
         />
       </div>
 
@@ -24,8 +24,6 @@ const IssueCreateForm = () => {
           name="description"
           className="form-control"
           
-          
-         
         />
       </div>
 
@@ -35,10 +33,7 @@ const IssueCreateForm = () => {
           type="text"
           name="author"
           className="form-control"
-          
-          
-          
-          
+         
         />
       </div>
 
