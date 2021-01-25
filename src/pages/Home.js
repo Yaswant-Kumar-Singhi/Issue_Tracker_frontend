@@ -48,7 +48,7 @@ const Home = () =>{
                 <div className="container">
                     <div className="row">
                         {projects.map((project)=>(
-                            <div key={project._id} className="col-md-4">                    
+                            <div key={project._id} className="col-md-4 pb-3">                    
                                 <ProductCard project={project} />
                             </div>))}
                     </div>
