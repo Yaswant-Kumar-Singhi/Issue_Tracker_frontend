@@ -8,3 +8,6 @@ export const create = async (project) =>
 
   export const getProjects = async () => 
    await axios.get(`http://localhost:8000/api/projects`)
+
+   export const getProject = async (slug) =>
+   await axios.get(`http://localhost:8000/api/project/${slug}`);
