@@ -4,7 +4,7 @@ import { Route, Switch } from'react-router-dom'
 import Home from './pages/Home'
 import ProjectCreate from './pages/project/ProjectCreate'
 import Project from './pages/project/Project'
-import Issue from './pages/issue/Issue'
+import IssueCreate from './pages/issue/IssueCreate'
 
 
 
@@ -16,7 +16,7 @@ const App = () =>{
         <Route  exact path="/" component={Home}/>
         <Route  exact path="/project/create" component={ProjectCreate}/>
         <Route  exact path="/project/:slug" component={Project}/>
-        <Route  exact path="/project/:_id/issue" component={Issue}/>
+        <Route  exact path='/issue' component={IssueCreate}/>
 
       </Switch>
       
