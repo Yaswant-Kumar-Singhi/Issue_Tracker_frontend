@@ -128,7 +128,7 @@ const IssueCreateForm = ({
       <div className="form-group">
         <label>Project</label>
         <select
-          name="category"
+          name="project"
           className="form-control"
           onChange={handleProjectChange}
         >

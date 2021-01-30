@@ -21,7 +21,7 @@ const HeaderComponent = () => {
                         <Link to="/project/create">Create Project</Link>
                     </Menu.Item>
                     <Menu.Item key="/createIssue" style={{"float":"right"}}>
-                        <Link to="/issue/create">Create Issue</Link>
+                        <Link to="/issue">Create Issue</Link>
                     </Menu.Item>
                     </SubMenu>
                 </Menu>

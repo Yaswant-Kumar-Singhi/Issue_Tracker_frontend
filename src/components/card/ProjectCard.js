@@ -26,8 +26,8 @@ const ProjectCard = ({project}) =>{
             <EyeOutlined className="text-warning" /> <br /> View 
           </Link>,
           <>
-          <Link to={`/issue`}>
-          <DeleteOutlined className="text-danger" /> <br /> Add Issue
+          <Link to={`/project/${slug}/delete`}>
+          <DeleteOutlined className="text-danger" /> <br /> Delete Project
           </Link>
         </>,
         ]}

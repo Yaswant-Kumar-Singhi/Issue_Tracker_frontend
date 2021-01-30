@@ -101,15 +101,25 @@ const IssueCreate = () => {
     e.preventDefault();
     createIssue(values)
       .then((res) => {
-        console.log(res);
-        window.alert(`"${res.data.title}" is created`);
-        window.location.reload();
-      })
+        try{
+          console.log(res);
+          window.alert(`"${res.data.title}" is created`);
+          window.location.reload();
+        }
+        catch(err){
+          window.alert(`Issue is created`);
+          window.location.reload();
+
+        }
+        
+      }
+      )
       .catch((err) => {
         console.log(err);
         // if (err.response.status === 400) toast.error(err.response.data);
        
       });
+      
   };
 
   const handleChange = (e) => {
@@ -119,19 +129,16 @@ const IssueCreate = () => {
 
   const handleProjectChange = (e) => {
     e.preventDefault();
-    console.log("CLICKED CATEGORY", e.target.value);
+    console.log("CLICKED Project", e.target.value);
     setValues({ ...values, project : e.target.value });
   };
 
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-2">
-          <HeaderComponent />
-        </div>
-
-       
-
+        
+      <HeaderComponent />
+        <div className="col-md-3">
           <IssueCreateForm
             handleSubmit={handleSubmit}
             handleChange={handleChange}
@@ -142,7 +149,7 @@ const IssueCreate = () => {
           />
         </div>
       </div>
-    
+    </div>
   );
 };
 
