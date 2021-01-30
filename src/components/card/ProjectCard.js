@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from "antd";
 import {Link} from 'react-router-dom'
-import { EyeOutlined , EditOutlined} from "@ant-design/icons";
+import { EyeOutlined , DeleteOutlined} from "@ant-design/icons";
 import laptop from '../../images/laptop.png'
 
 const { Meta } = Card;
@@ -27,7 +27,7 @@ const ProjectCard = ({project}) =>{
           </Link>,
           <>
           <Link to={`/issue`}>
-          <EditOutlined className="text-danger" /> <br /> Add Issue
+          <DeleteOutlined className="text-danger" /> <br /> Add Issue
           </Link>
         </>,
         ]}
