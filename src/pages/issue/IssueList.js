@@ -27,7 +27,7 @@ const IssueList = () => {
                     <div className="row">
                         {issues.map((issue)=>(
                             <div key={issue._id} className="col-md-3 pb-3">                    
-                               {issue.title}
+                               {issue.title} <br /> {issue.description}
                             </div>))}
                     </div>
                 </div>
