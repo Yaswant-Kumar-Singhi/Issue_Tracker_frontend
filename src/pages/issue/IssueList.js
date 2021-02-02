@@ -27,7 +27,7 @@ const IssueList = () => {
             <div className="container">
                     <div className="row">
                         {issues.map((issue)=>(
-                            <div key={issue._id} className="col-md-3 pb-3">                    
+                            <div key={issue._id} className="col-md-4 pb-3">                    
                                <IssueCard issue={issue} />
                             </div>))}
                     </div>
