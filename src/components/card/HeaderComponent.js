@@ -24,6 +24,9 @@ const HeaderComponent = () => {
                         <Link to="/issue">Create Issue</Link>
                     </Menu.Item>
                     </SubMenu>
+                    <Menu.Item key="/issuelist" style={{"float":"right"}}>
+                        <Link to="/issuelist">View Issues</Link>
+                    </Menu.Item>
                 </Menu>
     </Header>
     )
