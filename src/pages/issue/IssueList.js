@@ -24,6 +24,7 @@ const IssueList = () => {
             <HeaderComponent />
             I am in add issue page
             <br />
+            
             <div className="container">
                     <div className="row">
                         {issues.map((issue)=>(
