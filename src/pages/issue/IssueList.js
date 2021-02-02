@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import HeaderComponent from '../../components/card/HeaderComponent'
+import IssueCard from '../../components/card/IssueCard'
 import {getIssues} from '../../functions/project_function'
 
 const IssueList = () => {
@@ -27,7 +28,7 @@ const IssueList = () => {
                     <div className="row">
                         {issues.map((issue)=>(
                             <div key={issue._id} className="col-md-3 pb-3">                    
-                               {issue.title} <br /> {issue.description}
+                               <IssueCard issue={issue} />
                             </div>))}
                     </div>
                 </div>
