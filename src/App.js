@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import ProjectCreate from './pages/project/ProjectCreate'
 import Project from './pages/project/Project'
 import IssueCreate from './pages/issue/IssueCreate'
+import IssueList from './pages/issue/IssueList'
 
 
 
@@ -17,6 +18,8 @@ const App = () =>{
         <Route  exact path="/project/create" component={ProjectCreate}/>
         <Route  exact path="/project/:slug" component={Project}/>
         <Route  exact path='/issue' component={IssueCreate}/>
+        <Route  exact path='/issuelist' component={IssueList}/>
+
 
       </Switch>
       

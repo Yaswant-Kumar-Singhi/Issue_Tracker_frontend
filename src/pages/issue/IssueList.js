@@ -1,18 +1,17 @@
 import React from 'react'
-import IssueCreateForm from '../../components/forms/IssueCreateForm'
 import HeaderComponent from '../../components/card/HeaderComponent'
 
-const Issue = () => {
+const IssueList = () => {
 
     return(
         <div>
             <HeaderComponent />
-            I am in add issue page
+            I am in add issue List Page
             <br />
-            <IssueCreateForm />
+            
         </div>
     )
 
 }
 
-export default Issue
+export default IssueList
