@@ -6,7 +6,7 @@ const IssueList = () => {
     return(
         <div>
             <HeaderComponent />
-            I am in add issue List Page
+            I am in add issue page
             <br />
             
         </div>

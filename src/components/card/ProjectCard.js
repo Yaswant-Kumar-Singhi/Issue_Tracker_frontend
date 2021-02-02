@@ -7,7 +7,7 @@ import laptop from '../../images/laptop.png'
 const { Meta } = Card;
 
 const ProjectCard = ({project}) =>{
-    const { image, name, description, author , slug, _id} = project;
+    const { name, description, author , slug, _id} = project;
 
 
     return(
