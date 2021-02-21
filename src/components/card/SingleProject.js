@@ -26,7 +26,7 @@ const SingleProject = ({ project }) => {
             {description && description}
           </TabPane>
           <TabPane tab="More" key="2">
-            Issue to be listed down later on.
+            {project.length}
           </TabPane>
         </Tabs>
       </div>

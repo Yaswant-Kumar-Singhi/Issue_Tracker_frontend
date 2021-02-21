@@ -24,6 +24,8 @@ const ProjectListItems = ({ project }) => {
         </span>
       </li>
 
+      
+
       </ul>
 
   );

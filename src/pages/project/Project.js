@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { getProject} from "../../functions/project_function";
 import SingleProject from "../../components/card/SingleProject";
+import IssueCard from "../../components/card/IssueCard";
 
 
 
 const Project = ({ match }) => {
   const [project, setProject] = useState({});
+  const [issue , setIssue] = useState([{}])
   const { slug } = match.params;
 
   useEffect(() => {
     loadSingleProject();
-  }, [slug]);
+  }, [slug],[]);
 
   
 
   const loadSingleProject = () => {
     getProject(slug).then((res) => {
-      setProject(res.data);
+      console.log(JSON.stringify(res.data.issue))
+      setProject(res.data.project);
+      setIssue(res.data.issue);
+
     });
   };
 
@@ -28,6 +33,13 @@ const Project = ({ match }) => {
           project={project}
         />
       </div>
+
+      <div className="row">
+        <div className="col-md-3">
+        <IssueCard issue={issue}></IssueCard>
+        </div>
+      </div>
+      
     </div>
   );
 };
